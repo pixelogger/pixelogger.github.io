@@ -7,5 +7,13 @@
 </head>
 <body>
     Hello World
+    <script>
+        fetch('https://pixeloff-af5e4-default-rtdb.firebaseio.com/users.json')
+            .then((result) => {
+                console.log(result);
+            }).catch((err) => {
+                throw new Error(err)
+            });
+    </script>
 </body>
 </html>
